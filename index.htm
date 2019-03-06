@@ -9,24 +9,49 @@
   <style>
     visitornav {
       float: left;
-      padding: 30px;
+      width: 50%;
+      padding: 10px;
       text-align: center;
      }
      
     studentnav {
       float: right;
-      padding: 30px;
+      width: 50%;
+      padding: 10px;
       text-align: center;
+    }
+    
+    section: after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    @media (max-width: 600px) {
+      visitornav, studentnav {
+        width: 100%;
+        height: auto;
+      }
     }
   </style>
   
   <body>
-    <visitornav>
-      <a href="#visitor">I'm a Visitor</a>
-    </visitornav>
+    <header>
+      
+    </header>
     
-    <studentnav>
-      <a href="#student">I'm a Student</a>
-    </studentnav>
+    <section>
+      <visitornav>
+        <a href="#visitor">I'm a Visitor</a>
+      </visitornav>
+    
+      <studentnav>
+        <a href="#student">I'm a Student</a>
+      </studentnav>
+    </section>
+    
+    <footer>
+      
+    </footer>
   </body>
 </html>
